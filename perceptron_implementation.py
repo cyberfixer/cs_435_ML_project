@@ -1,5 +1,3 @@
-from distutils.log import error
-from errno import errorcode
 import numpy as np
 class Perceptron(object):
     def __init__(self, n_iter=10) :
