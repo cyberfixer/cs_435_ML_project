@@ -36,8 +36,8 @@ def findWhatClassIsIt(classA, classB):
 
     #My Implementation
     pp = Perceptron(30)
-    pp.Train(x_train, y_train)
-    y_predicted = pp.Predict(x_test)
+    pp.train(x_train, y_train)
+    y_predicted = pp.predict(x_test)
 
     result = np.where(y_predicted==y_test, 1, -1)
 

@@ -3,7 +3,7 @@ class Perceptron(object):
     def __init__(self, n_iter=10) :
         self.n_iter = n_iter
         
-    def Train(self, X, d):
+    def train(self, X, d):
         self.weights = np.zeros(X.shape[1])#np.random.random(X.shape[1])
         self.b = 0
         self.errors_ = []
@@ -23,7 +23,7 @@ class Perceptron(object):
 
         return self 
                 
-    def Predict(self, X):
+    def predict(self, X):
         a = np.dot(X, self.weights) + self.b
         return np.where(a >= 0, 1, -1)
 
